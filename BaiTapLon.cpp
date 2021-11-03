@@ -30,6 +30,15 @@ class infoST:public score{
 		void xuatI(){
 		
 			}
+		float gettoan(){
+			return s_toan;
+		}
+		float gettin(){
+			return s_tin;
+		}
+		float geteng(){
+			return s_eng;
+		}
 	};
 class SinhVien:public infoST{
 	private: 
@@ -39,6 +48,9 @@ class SinhVien:public infoST{
 		void Xuat();
 		void NhapDS(SinhVien s, int &n);
 		void XuatDS(SinhVien s, int n);
+		void editinfo(SinhVien s, int n);
+		void arangename(SinhVien s, int n);
+		void arrangeMSV(SinhVien s, int n);
 	};
 struct Node{
 	SinhVien data;
